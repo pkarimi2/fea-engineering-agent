@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# MAPDL / solver artifacts
+*.db
+*.rst
+*.rth
+*.rmg
+*.emat
+*.esav
+*.full
+*.mcom
+*.lock
+file*.out
+
+# Logs / generated results
+results/
+logs/
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,16 @@
+name: FEA Regression
+
+# Placeholder workflow for the planned self-hosted Ansys regression runner.
+# Enable only after a self-hosted runner with Ansys / PyMAPDL is configured.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  regression:
+    if: ${{ false }}
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder
+        run: echo "Configure the self-hosted Ansys runner before enabling this workflow."
