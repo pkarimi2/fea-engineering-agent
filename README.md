@@ -72,6 +72,43 @@ Official PyMAPDL-MCP project: https://github.com/ansys/pymapdl-mcp
 
 ---
 
+
+## Quick start: first real demo
+
+On a Windows machine with a modern Ansys MAPDL installation:
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python examples\nrc_piping\run_demo.py
+```
+
+Or run:
+
+```bat
+run_nrc_demo.bat
+```
+
+The generated report is written to:
+
+```text
+examples/nrc_piping/outputs/demo_report.md
+```
+
+The first deterministic natural-language-style queries are also available:
+
+```bat
+cd examples\nrc_piping
+python ask_model.py What elements are connected to node 2?
+python ask_model.py Which elements use material 1?
+python ask_model.py Show restraints at node 1.
+```
+
+These queries deliberately hit MAPDL selections/listings directly.  The LLM/MCP layer will be added on top of the same tool functions rather than replacing the solver evidence.
+
+---
+
 ## Project roadmap
 
 ### 1. Model interrogation
@@ -267,7 +304,7 @@ The agent should link physical intent in drawings or calculations to the actual 
 
 ## Public demonstration model
 
-The first public benchmark is planned around the **NRC piping verification problem NUREG/CR-1677, Volume 1, Problem 1**, available through the official PyMAPDL examples.
+The first public solver-backed demo uses the **NRC piping verification problem NUREG/CR-1677, Volume 1, Problem 1**, available through the official PyMAPDL examples.  The repository now includes a reproducible build/solve/interrogation workflow under `examples/nrc_piping/`.
 
 Why this model is useful:
 
@@ -289,6 +326,8 @@ The official example reports the first five modal frequencies near:
 Those reference values make the model particularly useful for demonstrating automated verification.
 
 See [`examples/nrc_piping/README.md`](examples/nrc_piping/README.md).
+
+After a local run, the generated evidence package includes model screenshots, a modal regression CSV, raw query JSON, and a GitHub-ready Markdown report.  This is the first presentation demo intended to be shown as **actual solver output**, not a UI mockup.
 
 > Private client models and proprietary project data are intentionally not included in this repository.
 
@@ -342,8 +381,10 @@ This repository is an active prototype. The project is intentionally being devel
 | Capability | Status |
 |---|---|
 | Public benchmark selection | Ready |
+| NRC PyMAPDL build + modal regression demo | Ready to run locally |
+| Deterministic model interrogation tools | Ready to run locally |
 | PyMAPDL / MCP architecture | Ready for integration |
-| Natural-language model interrogation | In development |
+| Natural-language LLM/MCP orchestration | Next |
 | Semantic model diff | Planned |
 | Root-cause counterfactual runs | Planned |
 | Legacy migration workflow | Planned |

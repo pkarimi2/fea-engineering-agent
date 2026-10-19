@@ -1,0 +1,14 @@
+MODEL INTERROGATION RESULTS
+===========================
+
+Q: What elements are connected to node 2?
+A: 2, 3, 21
+Evidence: NSEL,S,NODE,,2 -> ESLN,S
+
+Q: Which elements use material 1?
+A: 29 elements
+Evidence: ESEL,S,MAT,,1
+
+Q: Show restraints at node 1.
+A: constrained = False
+Evidence: DLIST output preserved in query_results.json

@@ -1,36 +1,72 @@
-# NRC Piping Benchmark — Public Demo Model
+# NRC Piping Benchmark Demo
 
-This example is intended to be the first public demonstration model for the FEA Engineering Agent.
+This is the first **real solver-backed demonstration** for the FEA Engineering Agent project.
 
-## Source
+It uses the public Ansys/PyMAPDL implementation of the NRC piping benchmark from **NUREG/CR-1677, Volume 1, Problem 1** as the engineering reference.  The model contains straight pipe, elbows, lumped masses, fixed anchors, modal analysis, and published reference frequencies.
 
-Official PyMAPDL verification example:
-
+Official benchmark page:
 https://examples.mapdl.docs.pyansys.com/version/dev/verif-manual/vm-nr1677-01-1a.html
 
-Reference benchmark:
+## What the demo does
 
-P. Bezler, M. Hartzman, and M. Reich, *Dynamic Analysis of Uniform Support Motion Response Spectrum Method*, NUREG/CR-1677, Brookhaven National Laboratory, 1980, Volume 1, Problem 1.
+`run_demo.py`:
 
-## Why this benchmark
+1. launches a local MAPDL session through PyMAPDL,
+2. rebuilds the public piping benchmark,
+3. saves a baseline database,
+4. solves the first five modes,
+5. compares them with the published reference frequencies,
+6. asks deterministic model-interrogation questions,
+7. saves actual MAPDL/PyMAPDL screenshots and JSON/CSV evidence,
+8. writes a GitHub-friendly report at `outputs/demo_report.md`.
 
-The model is a compact but meaningful piping system with:
+The initial questions are deliberately simple:
 
-- three straight pipe segments,
-- two bends,
-- two fixed anchors,
-- lumped structural masses,
-- modal analysis,
-- response-spectrum analysis,
-- three excitation directions,
-- GRP modal combination,
-- published reference values.
+```text
+What elements are connected to node 2?
+Which elements use material 1?
+Show restraints at node 1.
+```
 
-The PyMAPDL implementation uses modern element technologies including `PIPE289`, `ELBOW290`, and `MASS21`.
+The important point is that the answers come from MAPDL selections/listings, not from an LLM guessing the model state.
 
-## Reference modal frequencies
+## Requirements
 
-The official verification example compares the first five frequencies to approximately:
+- Windows machine with a supported local Ansys MAPDL installation/license
+- Python 3.10+ recommended
+- For the database/query workflow, a modern MAPDL release is recommended; the public PyMAPDL database API supports MAPDL 2021 R1 and later (with a documented exception for 2023 R1).
+
+This repository is being developed against a modern MAPDL installation; **Ansys 2025 R1 is an appropriate target for this demo**.
+
+## Setup on Windows
+
+From the repository root:
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If PyMAPDL finds your Ansys installation automatically, run:
+
+```bat
+python examples\nrc_piping\run_demo.py
+```
+
+If MAPDL is not auto-detected, set its executable first.  Example for a typical 2025 R1 install:
+
+```bat
+set ANSYS_MAPDL_EXECUTABLE=C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe
+python examples\nrc_piping\run_demo.py
+```
+
+Adjust the path if your Ansys installation is elsewhere.
+
+## Expected reference frequencies
+
+The official verification example reports approximately:
 
 | Mode | Reference frequency (Hz) |
 |---:|---:|
@@ -40,52 +76,39 @@ The official verification example compares the first five frequencies to approxi
 | 4 | 144.140 |
 | 5 | 166.260 |
 
-These values provide an objective regression target for automated verification.
+Your generated `outputs/modal_check.csv` records the computed values and percent differences.
 
-## Planned demos
+## Ask the model from the command line
 
-### Demo 1 — Model interrogation
+The first natural-language front end is intentionally deterministic rather than LLM-based.  It proves the solver-query layer first.
 
-```text
-What elements are connected to this node?
-Which elements are PIPE289 vs ELBOW290?
-Where are the fixed anchors?
-Show every MASS21 element.
+```bat
+cd examples\nrc_piping
+python ask_model.py What elements are connected to node 2?
+python ask_model.py Which elements use material 1?
+python ask_model.py Show restraints at node 1.
 ```
 
-### Demo 2 — Semantic model diff
+Later, the MCP/LLM layer will call the same query functions as tools.
 
-Create a controlled revision, for example:
+## Generated evidence
 
-- change one support DOF,
-- change one material stiffness,
-- relocate one lumped mass,
-- modify a pipe section.
-
-Then ask:
+After a successful run, the `outputs/` folder contains:
 
 ```text
-Compare baseline and modified models and explain the engineering differences.
+01_model_with_bcs.png
+02_node_2_connected_elements.png
+03_material_1_elements.png
+model_summary.json
+modal_check.csv
+query_results.json
+demo_report.md
 ```
 
-### Demo 3 — Root-cause investigation
+Those are the files to use for the first presentation screenshots and the GitHub README.
 
-```text
-The first frequency changed between Model A and Model B. Why?
-```
+## Presentation story
 
-The agent should compare mass, stiffness, connectivity, and boundary conditions and then run a controlled counterfactual case to test the leading hypothesis.
+This demo supports a simple claim:
 
-### Demo 4 — Continuous verification
-
-A GitHub workflow can rerun the benchmark after a model/code change and compare:
-
-- frequencies,
-- selected nodal displacements,
-- selected rotations,
-- element forces / moments,
-- reactions.
-
-## Important note
-
-The official PyMAPDL page labels this as a **verification run**. The example is appropriate for regression testing and demonstration; it is not a production design model.
+> **The LLM does not invent the finite-element answer. It decides what to ask; MAPDL provides the model fact; the evidence is preserved.**

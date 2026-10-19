@@ -1,29 +1,28 @@
 # Python
+.venv/
 __pycache__/
 *.py[cod]
-.venv/
-venv/
-.env
+.pytest_cache/
 
-# MAPDL / solver artifacts
-*.db
+# Local MAPDL working folders / generated solver binaries
+**/.mapdl_run/
+*.lock
 *.rst
 *.rth
-*.rmg
+*.full
 *.emat
 *.esav
-*.full
 *.mcom
-*.lock
-file*.out
-
-# Logs / generated results
-results/
-logs/
-*.log
+*.mode
+*.mntr
+*.page
+*.db
 
 # IDE / OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# NOTE: examples/nrc_piping/outputs/ is intentionally NOT ignored.
+# Presentation-quality solver evidence may be committed after review.
