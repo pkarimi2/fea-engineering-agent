@@ -1,0 +1,24 @@
+{
+  "benchmark": "NUREG/CR-1677 Volume 1 Problem 1",
+  "source": "https://examples.mapdl.docs.pyansys.com/version/dev/verif-manual/vm-nr1677-01-1a.html",
+  "nodes": 41,
+  "elements": 29,
+  "element_technologies": [
+    "PIPE289",
+    "ELBOW290",
+    "MASS21"
+  ],
+  "material": {
+    "E_psi": 24000000.0,
+    "nu": 0.3
+  },
+  "pipe_section": {
+    "OD_in": 7.289,
+    "thickness_in": 0.241
+  },
+  "lumped_mass_total_lb_s2_per_in": 0.20151,
+  "anchor_nodes": [
+    1,
+    24
+  ]
+}

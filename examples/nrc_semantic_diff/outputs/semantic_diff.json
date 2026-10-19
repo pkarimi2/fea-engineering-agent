@@ -1,0 +1,12 @@
+{
+  "change_type": "boundary_condition",
+  "node": 24,
+  "dof": "UX",
+  "model_a": "FIXED",
+  "model_b": "FREE",
+  "geometry_changed": false,
+  "element_count_changed": false,
+  "material_changed": false,
+  "section_changed": false,
+  "mass_changed": false
+}

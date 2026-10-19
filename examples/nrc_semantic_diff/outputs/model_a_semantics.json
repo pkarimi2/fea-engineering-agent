@@ -1,0 +1,20 @@
+{
+  "boundary_conditions": {
+    "1": [
+      "UX",
+      "UY",
+      "UZ",
+      "ROTX",
+      "ROTY",
+      "ROTZ"
+    ],
+    "24": [
+      "UX",
+      "UY",
+      "UZ",
+      "ROTX",
+      "ROTY",
+      "ROTZ"
+    ]
+  }
+}

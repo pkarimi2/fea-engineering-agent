@@ -1,0 +1,16 @@
+SEMANTIC MODEL DIFF
+===================
+Node 24: UX  FIXED -> FREE
+Geometry / elements / material / section / mass: unchanged
+
+RESULT IMPACT
+=============
+Largest shift: Mode 2: 56.4409 -> 29.8916 Hz (-47.039%)
+
+COUNTERFACTUAL
+==============
+Restore Node 24 UX; max residual difference = 0.000000% -> PASS
+
+CONCLUSION
+==========
+The changed restraint is isolated as the causal model revision for the modal shift.
