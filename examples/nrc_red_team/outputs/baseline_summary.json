@@ -1,0 +1,22 @@
+{
+  "benchmark": "NUREG/CR-1677 Volume 1 Problem 1",
+  "source": "https://examples.mapdl.docs.pyansys.com/version/dev/verif-manual/vm-nr1677-01-1a.html",
+  "nodes": 41,
+  "elements": 29,
+  "anchor_nodes": [
+    1,
+    24
+  ],
+  "baseline_modes_hz": [
+    28.514896,
+    56.440933,
+    82.947287,
+    144.13929,
+    166.26374
+  ],
+  "element_technologies": [
+    "PIPE289",
+    "ELBOW290",
+    "MASS21"
+  ]
+}

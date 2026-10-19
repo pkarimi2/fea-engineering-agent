@@ -1,0 +1,44 @@
+[
+  {
+    "id": "E_MINUS_20",
+    "label": "Elastic modulus -20%",
+    "category": "material",
+    "e_scale": 0.8
+  },
+  {
+    "id": "E_PLUS_20",
+    "label": "Elastic modulus +20%",
+    "category": "material",
+    "e_scale": 1.2
+  },
+  {
+    "id": "THK_MINUS_10",
+    "label": "Wall thickness -10%",
+    "category": "section",
+    "thk_scale": 0.9
+  },
+  {
+    "id": "THK_PLUS_10",
+    "label": "Wall thickness +10%",
+    "category": "section",
+    "thk_scale": 1.1
+  },
+  {
+    "id": "MASS_MINUS_20",
+    "label": "Lumped masses -20%",
+    "category": "mass",
+    "mass_scale": 0.8
+  },
+  {
+    "id": "MASS_PLUS_20",
+    "label": "Lumped masses +20%",
+    "category": "mass",
+    "mass_scale": 1.2
+  },
+  {
+    "id": "ANCHOR_UX_RELEASE",
+    "label": "Anchor UX released",
+    "category": "boundary condition",
+    "release_anchor_ux": true
+  }
+]

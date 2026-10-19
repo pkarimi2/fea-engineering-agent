@@ -1,0 +1,21 @@
+AI RED TEAM / ROBUSTNESS CHALLENGE
+==================================
+Baseline modes (Hz): 28.5149, 56.4409, 82.9473, 144.1393, 166.2637
+Challenges executed: 7
+
+MOST INFLUENTIAL CHALLENGE
+==========================
+Anchor UX released
+Controlling mode: 2
+Maximum absolute modal shift: 47.039%
+
+SECOND MOST INFLUENTIAL
+=======================
+Lumped masses -20%
+Controlling mode: 4
+Maximum absolute modal shift: 11.803%
+
+ENGINEERING CONCLUSION
+======================
+The challenge library ranks modeling assumptions by solver-observed consequence.
+This is deterministic sensitivity evidence; it does not rely on an LLM to invent results.

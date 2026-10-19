@@ -1,0 +1,8 @@
+rank,challenge_id,challenge,category,controlling_mode,max_abs_percent_change
+1,ANCHOR_UX_RELEASE,Anchor UX released,boundary condition,2,47.039233
+2,MASS_MINUS_20,Lumped masses -20%,mass,4,11.803402
+3,E_MINUS_20,Elastic modulus -20%,material,4,10.557281
+4,E_PLUS_20,Elastic modulus +20%,material,1,9.544513
+5,MASS_PLUS_20,Lumped masses +20%,mass,5,8.712910
+6,THK_MINUS_10,Wall thickness -10%,section,2,6.382449
+7,THK_PLUS_10,Wall thickness +10%,section,2,6.003907
