@@ -1,0 +1,24 @@
+{
+  "benchmark": "PyMAPDL Technology Showcase 20 - 3-layer PCB assembly",
+  "single_board_nodes": 14699,
+  "single_board_elements": 8682,
+  "assembled_nodes": 43897,
+  "assembled_elements": 26046,
+  "element_types": [
+    "BEAM188",
+    "CONTA174",
+    "SHELL181",
+    "SOLID186",
+    "TARGE170"
+  ],
+  "component_node_counts": {
+    "N_JOINT_BOARD": 5,
+    "N_JOINT_LEGS": 5,
+    "N_BASE": 5,
+    "N_BASE_EXCITE": 5,
+    "MY_MONITOR": 1
+  },
+  "source_file": "pcb_mesh_file.cdb",
+  "sha256": "aca96794b31d823b8504a30917564afbb93b92b32998066edbc458b3c4ddc0dc",
+  "official_example": "https://examples.mapdl.docs.pyansys.com/technology_showcase_examples/techdemo-20/ex_20-tecPCB.html"
+}

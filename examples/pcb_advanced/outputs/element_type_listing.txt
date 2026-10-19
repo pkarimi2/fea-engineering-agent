@@ -1,0 +1,175 @@
+LIST ELEMENT TYPES FROM        1 TO       51 BY        1
+   *****MAPDL VERIFICATION RUN ONLY*****
+     DO NOT USE RESULTS FOR PRODUCTION
+
+ ELEMENT TYPE        1 IS BEAM188      3-D 2-NODE BEAM             
+  KEYOPT( 1- 6)=        0      0      2        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+ ELEMENT TYPES        2 THROUGH        5 ARE THE SAME AS TYPE        1
+
+ ELEMENT TYPE        6 IS SHELL181     4-NODE SHELL                
+  KEYOPT( 1- 6)=        0      0      2        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE        7 IS SOLID186     3-D 20-NODE STRUCTURAL SOLID
+  KEYOPT( 1- 6)=        0      1      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+ ELEMENT TYPES        8 THROUGH       21 ARE THE SAME AS TYPE        7
+
+ ELEMENT TYPE       22 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       23 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       24 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       25 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       26 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       27 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       28 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       29 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       30 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       31 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       32 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       33 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       34 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       35 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       36 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       37 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       38 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       39 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       40 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       41 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       42 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+   *****MAPDL VERIFICATION RUN ONLY*****
+     DO NOT USE RESULTS FOR PRODUCTION
+
+ ELEMENT TYPE       43 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       44 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       45 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       46 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       47 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       48 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       49 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       50 IS CONTA174     3D 8-NODE SURF-SURF CONTACT 
+  KEYOPT( 1- 6)=        0      2      0        2      0      0
+  KEYOPT( 7-12)=        0      2      1        0      0      5
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ ELEMENT TYPE       51 IS TARGE170     3-D TARGET SEGMENT          
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ CURRENT NODAL DOF SET IS  UX    UY    UZ    ROTX  ROTY  ROTZ
+  THREE-DIMENSIONAL MODEL

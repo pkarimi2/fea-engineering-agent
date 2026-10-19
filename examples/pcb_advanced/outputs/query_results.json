@@ -1,0 +1,24 @@
+{
+  "answers": [
+    "Model size: 43,897 nodes; 26,046 elements.",
+    "Element technologies found: BEAM188, CONTA174, SHELL181, SOLID186, TARGE170.",
+    "Base-excitation component N_BASE_EXCITE: 5 nodes.",
+    "Monitor component MY_MONITOR: 1 node(s).",
+    "Joint-board component N_JOINT_BOARD: 5 nodes.",
+    "Joint-legs component N_JOINT_LEGS: 5 nodes."
+  ],
+  "components": {
+    "N_JOINT_BOARD": 5,
+    "N_JOINT_LEGS": 5,
+    "N_BASE": 5,
+    "N_BASE_EXCITE": 5,
+    "MY_MONITOR": 1
+  },
+  "element_types": [
+    "BEAM188",
+    "CONTA174",
+    "SHELL181",
+    "SOLID186",
+    "TARGE170"
+  ]
+}
