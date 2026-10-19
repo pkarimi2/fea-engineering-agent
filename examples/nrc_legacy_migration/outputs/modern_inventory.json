@@ -1,0 +1,24 @@
+{
+  "implementation": "current_technology",
+  "element_technologies": [
+    "PIPE289",
+    "ELBOW290",
+    "MASS21"
+  ],
+  "nodes": 41,
+  "elements": 29,
+  "material": {
+    "E_psi": 24000000.0,
+    "nu": 0.3
+  },
+  "pipe": {
+    "OD_in": 7.289,
+    "thickness_in": 0.241,
+    "bend_radius_in": 36.3
+  },
+  "lumped_mass_total_lb_s2_per_in": 0.20151,
+  "anchors": {
+    "start": "ALL FIXED",
+    "end": "ALL FIXED"
+  }
+}

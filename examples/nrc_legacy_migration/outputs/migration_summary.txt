@@ -1,0 +1,18 @@
+LEGACY -> CURRENT TECHNOLOGY MIGRATION
+======================================
+Detected archived elements: PIPE16, PIPE18
+Chosen current technology: PIPE289, ELBOW290
+Retained: MASS21, material, wall thickness, lumped mass, anchor intent
+Expected implementation change: mesh/node/element counts may differ
+
+EQUIVALENCE CHECK
+=================
+First 5 modes compared
+Maximum absolute modal difference = 2.117%
+Demo criterion = <= 3.0%
+STATUS = PASS
+
+ENGINEERING CONCLUSION
+======================
+The model was modernized by changing element technology while preserving the tracked physical intent.
+Behavior is judged by deterministic equivalence checks, not by file conversion alone.

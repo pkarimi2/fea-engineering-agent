@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "demo_modal_tolerance_percent": 3.0,
+  "max_abs_modal_difference_percent": 2.1171480782649743,
+  "semantic_invariants": {
+    "youngs_modulus_preserved": true,
+    "poissons_ratio_preserved": true,
+    "wall_thickness_preserved": true,
+    "lumped_mass_preserved": true,
+    "anchor_intent_preserved": true,
+    "note_on_od": "Legacy public listing uses OD=7.288 in; current-tech public benchmark uses 7.289 in."
+  },
+  "node_count_identical_required": false,
+  "element_count_identical_required": false,
+  "reason": "The modern formulation intentionally changes interpolation/mesh technology; model intent and structural response are the verification targets."
+}

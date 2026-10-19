@@ -1,0 +1,33 @@
+{
+  "detected_archived_elements": [
+    {
+      "element": "PIPE16",
+      "status": "archived",
+      "ansys_documentation_recommendation": "PIPE288 with KEYOPT(3)=2",
+      "chosen_demo_replacement": "PIPE289",
+      "reason": "Official current-technology NRC benchmark uses PIPE289 for straight segments."
+    },
+    {
+      "element": "PIPE18",
+      "status": "archived",
+      "ansys_documentation_recommendation": "ELBOW290",
+      "chosen_demo_replacement": "ELBOW290"
+    }
+  ],
+  "retained": [
+    "MASS21",
+    "material properties",
+    "pipe dimensions",
+    "lumped masses",
+    "anchor intent"
+  ],
+  "intentional_implementation_changes": [
+    "legacy PIPE16/PIPE18 formulations replaced",
+    "current-technology pipe/elbow mesh is refined near bends",
+    "node and element counts are therefore not expected to remain identical"
+  ],
+  "acceptance_check": {
+    "quantity": "first five natural frequencies",
+    "demo_tolerance_percent": 3.0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "implementation": "legacy",
+  "element_technologies": [
+    "PIPE16",
+    "PIPE18",
+    "MASS21"
+  ],
+  "archived_elements": [
+    "PIPE16",
+    "PIPE18"
+  ],
+  "nodes": 11,
+  "elements": 19,
+  "material": {
+    "E_psi": 24000000.0,
+    "nu": 0.3
+  },
+  "pipe": {
+    "OD_in": 7.288,
+    "thickness_in": 0.241,
+    "bend_radius_in": 36.3
+  },
+  "lumped_mass_total_lb_s2_per_in": 0.20151,
+  "anchors": {
+    "1": "ALL FIXED",
+    "11": "ALL FIXED"
+  }
+}
